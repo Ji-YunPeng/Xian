@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/Registration-page.css" />
+	</head>
+	<body>
+		<div id="top">
+			<div class="margin clear">
+				<ul id="top-l">
+					<li><a href="#" class="top-l-a1"></a></li>
+					<li><a href="#" class="top-l-a2"></a></li>
+					<li><a href="#" class="top-l-a3"></a></li>
+				</ul>
+				<ul id="top-r">
+					<li>您好,欢迎来到天虹!</li>
+					<li><span></span></li>
+					<li><a href="#" class="ac">[登录]</a></li>
+					<li><span></span></li>
+					<li><a href="#" class="ac">[注册]</a></li>
+					<li><span></span></li>
+					<li><a href="#" class="ac">我的订单</a></li>
+					<li><span></span ></li>
+					<li><a href="#" class="ac">我的天虹</a></li>
+					<li><span></span></li>
+					<li class="top-r-b">
+						<div class="Pop">
+							<div>客户服务<i class="i1"></i></div>
+							<div class="Popup none">
+								<p><a href="#">大型客户服务</a></p>
+								<p><a href="#">线上客服</a></p>
+								<p><a href="#">服务热线</a></p>
+							</div>
+						</div>
+						
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+		<div id="header" class="margin clear">
+			<div class="logo">
+				<a href="#">
+					<img src="imgs/logo_hlj.png"/>
+				</a>
+			</div>
+		</div>
+		
+		
+		<div id="register" class="margin">
+			<div class="register-t">
+				<div class="register-t-l">用户注册:</div>
+				<div class="register-t-r"><a href="#">返回登录>></a></div>
+			</div>
+			<form>
+				<div class="register-b">
+				<div class="Account-Number">
+					<span><s>*</s>账号:</span>
+					<input type="text" id="text1" value=""  required=true minlength="2" name="user"/>
+					<p>请输入邮箱/账号/手机号</p>
+					<div class="Dropdown"></div>
+					
+				</div>
+				<div class="Setting-Password">
+					<span><s>*</s>设置密码:</span>
+					<input type="password" id="pass" value="" required=true minlength="6" maxlength="20"/>
+					<p>6-20位字符可由数字字母符号组成</p>
+					<div class="Password-strength"></div>
+				</div>
+				<div class="Confirm-password">
+					<span><s>*</s>确认密码:</span>
+					<input type="password" id="pass1" value="" equalTo="#pass" required=true minlength="6" maxlength="20"/>
+					<p>确认密码</p>
+				</div>
+				<div class="Phone-number">
+					<span><s>*</s>电话号码:</span>
+					<input type="tel" id="tel" value="" digits=true minlength="11" maxlength="11"/>
+					<p>请输入验证手机号</p>
+				</div>
+				<div class="Verification-Code">
+					<span><s>*</s>验证码:</span>
+					<input type="text" id="text2" value="" required=true/>
+					<img src="http://www.morefood.com/admin/imgcode?0.9639870366837108"/>
+					<p>输入图片验证码</p>
+				</div>
+				<div class="Short-Message">
+					<span><s>*</s>短信验证:</span>
+					<input type="text" id="text3" value="" required=true/>
+					<a href="#" class="a1">获得短信验证码</a>
+					<p>输入短信验证码</p>
+				</div>
+				<div class="Consent-Agreement">
+					<input type="checkbox" checked="checked" id="cbox" required=true/>
+					阅读并接受
+					<a href="#">《用户协议》</a>
+				</div>
+				<div class="Determine">
+					<input type="button" id="btn" value="同意以上协议，注册"/>
+				</div>
+			</div>
+			</form>
+			
+		</div>
+		
+		
+		<div id="foot-b" class="margin">
+			<div class="foot-b-t">
+				<a href="#">粤ICP备11065574号-7</a>
+				<a href="#">营业执照</a>
+				<a href="#">用户使用条款和隐私政策</a>
+				<span> Copyright© 天虹 2009-2019, All Rights Reserved　 天虹商场股份有限公司 版权所有 </span>
+			</div>
+			<div class="foot-b-b">
+				<a href="#"><img src="imgs/newGovIcon.gif"/></a>
+				<a href="#"><img src="imgs/kexin.gif"/></a>
+				<a href="#"><img src="imgs/wangan2.gif"/></a>
+				<a href="#"><img src="imgs/ylimg.gif"/></a>
+				<a href="#"><img src="imgs/zhongxin.gif"/></a>
+				<a href="#"><img src="imgs/wangan.png"/> 粤公网安备 44030502001023号</a>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.js" ></script>
+	<script type="text/javascript" src="js/jquery.validate.js" ></script>
+	<script type="text/javascript" src="js/jquery.validate.messages_zh.js" ></script>
+	<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+	<script type="text/javascript" src="js/Registration-page.js" ></script>
+	
+</html>
