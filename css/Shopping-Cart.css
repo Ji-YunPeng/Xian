@@ -1,0 +1,397 @@
+.margin{
+	width: 1190px;
+	margin:0 auto;
+}
+#top{
+	height: 25px;
+	background: #f2f2f2;
+	border-bottom:1px solid #d2d2d2 ;
+	
+}
+#top-l{
+	float: left;
+}
+#top-l li{
+	float: left;
+	padding-top: 5px;
+	margin-right:12px;
+
+}
+#top-l li a{
+	display:block;
+	width: 17px;
+	height: 20px;
+	background:url(../imgs/thnewbg.png);
+}
+#top-l li .top-l-a1{
+	background-position: 0 -103px;
+}
+#top-l li .top-l-a2{
+	background-position: -19px -103px;
+}
+#top-l li .top-l-a3{
+	background-position: -38px -103px;
+}
+#top-r{
+	float: right;
+}
+#top-r li{
+	float: left;
+	font: 12px/25px "";
+	color: #656565;
+	
+}
+#top-r li .ac:hover{
+	color: red;
+}
+#top-r li:nth-child(odd){
+	padding: 0 10px;
+}
+#top-r li span{
+	display: block;
+	width: 1px;
+	height: 15px;
+	background: #cbcbcb;
+	margin: 6px 0px 4px 0px;
+}
+#top-r .top-r-b{
+	position: relative;
+}
+#top-r .top-r-b .Pop{}
+#top-r .top-r-b .Pop .i1{
+	display: block;
+	float: right;
+	width: 9px;
+	height: 5px;
+	background-image: url(../imgs/thnewbg.png);
+	background-position: -141px -308px;
+	margin: 10px 8px 10px 7px;
+}
+#top-r .top-r-b .Popup{
+	left: -1px;
+	width: 94px;
+	height: 77px;
+	text-align: center;
+	position: absolute;
+	border:1px solid #d2d2d2 ;
+	background: #F2F2F2;
+	z-index: 20;
+}
+#top-r .top-r-b .Pop:hover .Popup{
+	display: block;
+}
+#top-r .top-r-b .Pop .Popup p a:hover{
+	color: red;
+}
+.none{
+	display: none;
+}
+#foot{
+	margin-top: 20px;
+	height: 139px;
+	border-top: 2px solid #333;
+	border-bottom: 1px solid #999999;
+}
+.foot-t{}
+.foot-t dl{
+	float: left;
+	width: 120px;
+	margin: 0 39px;
+}
+.foot-t dl dt{
+	font:700 15px/2 "";
+	border-bottom: 1px solid #000000;
+}
+.foot-t dl dt:hover a{
+	color: red;
+}
+.foot-t dl dd{
+	font: 12px/2 "";
+	margin-top: 3px;
+}
+.foot-t dl dd:hover a{
+	color: red;
+}
+
+#foot-2{}
+#foot-2 ul{
+	display: flex;
+	justify-content:space-around;
+	padding: 20px;
+	}
+#foot-2 ul li{
+	text-align: center;
+}
+#foot-2 ul li a{
+	display: block;
+}
+#foot-2 ul li a i{
+	margin: 0px 0;
+	margin: 0 auto;
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-image:url(../imgs/menubg.png) ;
+}
+#foot-2 ul li a .i15{
+	background-position:-1px -191px  ;
+}
+#foot-2 ul li a .i16{
+	background-position:-55px -191px  ;
+}
+#foot-2 ul li a .i17{
+	background-position:-1px -243px  ;
+}
+#foot-2 ul li a .i18{
+	background-position:-55px -243px  ;
+}
+#foot-2 ul li a .i19{
+	background-position:-109px -243px  ;
+}
+#foot-2 ul li a h3{
+	margin: 5px 0;
+	font: 700 15px/2 "";
+}
+#foot-2 ul li a p{
+	margin: 5px 0;
+	font: 12px/2 "";
+}
+
+
+#foot-nav{
+	background: #999;
+}
+.footNav{}
+.footNav ul{
+	display: flex;
+	justify-content:center;
+}
+.footNav ul li{}
+.footNav ul li a{
+	font: 15px/2 "";
+	color: #FFFFFF;
+}
+.footNav ul li a:hover{
+	color: red;
+}
+.footNav ul li span{
+	font: 15px/2 "";
+	margin: 0 20px;
+	color: #F5F5F5;
+}
+
+#foot-b{
+	height: 200px;
+}
+.foot-b-t{
+	width: 810px;
+	margin: 0 auto;
+	font:12px/2 "";
+	padding: 0 30px;
+}
+.foot-b-t a{
+	color: #000000;
+}
+.foot-b-t span{
+	margin-left:10px ;
+}
+.foot-b-t a:hover{
+	color: red;
+}
+
+.foot-b-b{
+	width: 750px;
+	margin: 0 auto;
+	padding: 30px 70px;
+}
+.foot-b-b a{
+	margin: 0 5px;
+}
+
+#floor{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	z-index: 10;
+	height: 300px;
+	}
+	
+#floor dl{}
+#floor dl dt{
+	width: 30px;
+	height: 30px;
+	font: 15px/2 "";
+	background: rgba(205,200,170,.4);
+	padding:0 10px;
+	margin: 10px 0;
+	color: blue;
+}
+#floor dl dd{
+	width: 30px;
+	height: 30px;
+	font: 15px/2 "";
+	background: rgba(0,0,0,.4);
+	padding:0 10px;
+	margin: 10px 0;
+	color: #FFFFFF;
+}
+
+#car-top{
+	display: flex;
+	justify-content:space-between;
+}
+#car-top a{
+	display: block;
+}
+#car-top a:nth-child(2){
+	margin-top: 20px;
+}
+#car-top a img{
+	display: block;
+}
+
+#car-top2{
+	margin-top: 20px;
+}
+#car-top2 .car-top2-t{
+	display: flex;
+	justify-content:flex-start;
+	font: 15px/2 "";
+}
+#car-top2 .car-top2-t .car-top2-t-l{
+	padding: 0 15px;
+	color: #FFFFFF;
+	background: coral;
+	margin-right: 5px;
+}
+#car-top2 .car-top2-b{
+	width: 100%;
+	height: 300px;
+	background: #E0E0E0;
+	border: #555555 1px solid;
+	margin: 10px 0;
+	border-radius:10px ;
+	/*display: flex;*/
+	display: none;
+	justify-content:center;
+}
+#car-top2 .car-top2-b .car-top2-b-c{
+	display: flex;
+	justify-content:flex-start;
+	height: 70px;
+	margin-top:110px ;
+}
+#car-top2 .car-top2-b .car-top2-b-c img{
+	display: block;
+	margin-right: 20px;
+}
+#car-top2 .car-top2-b .car-top2-b-c .car-top2-b-c-r{
+	width: 300px;
+	font: 15px/2 "";
+}
+#car-top2 .car-top2-b .car-top2-b-c .car-top2-b-c-r a{
+	color: red;
+}
+
+#car-main{
+	margin-top: 20px;
+	border: 1px solid #666666;
+	font: 14px/40px "";
+}
+#car-main .car-main-t{
+	display: flex;
+	justify-content:flex-start;	
+	background: #F8F8F8;
+}
+#car-main .car-main-t div{
+
+	text-align: center;
+}
+#car-main .car-main-t .f1{
+	display: flex;
+	justify-content:flex-start;	
+	padding:0 10px;
+}
+#car-main .car-main-t .f1 input{
+	margin-top:14px ;
+	margin-right: 5px;
+}
+#car-main .car-main-t .ProInfo{
+	padding:0 10px;
+	width: 420px;
+}
+#car-main .car-main-t .ProPrice{
+	padding:0 10px;
+	width: 140px;
+}
+#car-main .car-main-t .quantity{
+	padding:0 10px;
+	width: 120px;
+}
+#car-main .car-main-t .subtotal{
+	padding:0 10px;
+	width: 170px;
+}
+#car-main .car-main-t .action{
+	padding:0 10px;
+	width: 170px;
+}
+
+#car-main .car-main-b{}
+#car-main .car-main-b .car-item{
+	display: flex;
+	justify-content:flex-start;	
+}
+#car-main .car-main-b .car-item div{
+
+	text-align: center;
+}
+#car-main .car-main-b .car-item .f1{
+	width: 46px;
+	display: flex;
+	justify-content:flex-start;	
+	padding:0 10px;
+}
+#car-main .car-main-b .car-item .f1 input{
+	margin-top:14px ;
+	margin-right: 5px;
+}
+#car-main .car-main-b .car-item .ProInfo{
+	padding:0 10px;
+	width: 420px;
+	display: flex;
+	justify-content:center;	
+}
+#car-main .car-main-b .car-item .ProInfo a{
+	display: block;
+}
+#car-main .car-main-b .car-item .ProInfo a img{
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+#car-main .car-main-b .car-item .ProInfo p{}
+#car-main .car-main-b .car-item .ProPrice{
+	padding:0 10px;
+	width: 140px;
+}
+#car-main .car-main-b .car-item .quantity{
+	padding:0 10px;
+	width: 120px;
+}
+#car-main .car-main-b .car-item .quantity input{
+	width: 100px;
+}
+#car-main .car-main-b .car-item .subtotal{
+	padding:0 10px;
+	width: 170px;
+}
+#car-main .car-main-b .car-item .action{
+	padding:0 10px;
+	width: 170px;
+	display: flex;
+	justify-content:space-around;	
+}
+
