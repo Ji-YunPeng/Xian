@@ -253,7 +253,7 @@
       border:1px solid #f7f7f7;
       background:#f7f7f7;
       box-shadow:2px 0 5px ;
-      background: rgba(0,0,0,.4);
+      background: rgba(255,255,255,.9);
       left:190px;
       top:40px;
       box-sizing:border-box;
@@ -414,14 +414,12 @@
 }
 .banner-r-t-t-r{
 	height: 30px;
-	width: 100px;
-	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	justify-content:space-around;
 	
 }
 .banner-r-t-t-r a{
-	margin: 10px 10px;
-	display: block;
-	float: left;
 	font: 15px/2 "";
 }
 
@@ -659,9 +657,9 @@
 	margin: 0 20px;
 	padding: 0 30px;
 }
-.AgourmetR-t ul li:hover{
+/*.AgourmetR-t ul li:hover{
 	background: #d49479;
-}
+}*/
 .AgourmetR-b{}
 .AgourmetR-b .AgourmetR-b-l{
 	float:left;
@@ -692,6 +690,9 @@
 	background: #d49479;
 	
 }
+.acaea{
+	background: coral;
+}
 .AgourmetR-b .AgourmetR-b-l ul li:hover a{
 	color: #FFFFFF;
 }
@@ -706,7 +707,8 @@
 }
 .AgourmetR-b .AgourmetR-b-r ul li{
 	float:left;
-	padding-bottom:11px ;
+	padding-bottom:0px ;
+	height: 240px;
 	border-left:1px dashed #333 ;
 }
 .AgourmetR-b .AgourmetR-b-r ul li:nth-child(1){
@@ -725,12 +727,13 @@
 .AgourmetR-b .AgourmetR-b-r #adm li a img{
 	display: block;
 	width: 200px;
-	height: 180px;
+	height: 160px;
 	padding: 0px;
 }
 .AgourmetR-b .AgourmetR-b-r #adm li a h4{
 	text-align: center;
 	font:12px/2 "";
+	width: 200px;
 }
 .AgourmetR-b .AgourmetR-b-r #adm li a p{
 	text-align: center;
@@ -886,16 +889,18 @@
 	height: 30px;
 	font: 15px/2 "";
 	background: rgba(205,200,170,.4);
-	padding:0 10px;
-	margin: 10px 0;
+	padding:5px 5px;
+	margin: 10px 0px;
 	color: blue;
+	border-radius:50% ;
 }
 #floor dl dd{
 	width: 30px;
 	height: 30px;
 	font: 15px/2 "";
 	background: rgba(0,0,0,.4);
-	padding:0 10px;
-	margin: 10px 0;
+	padding:5px 5px;
+	margin: 10px 0px;
 	color: #FFFFFF;
+	border-radius:50% ;
 }

@@ -145,7 +145,7 @@
 }
 .register-b div span s{
 	color: red;
-	display: none;
+
 }
 .register-b div input{
 	width: 198px;
@@ -157,7 +157,12 @@
 	margin-left: 10px;
 }
 .register-b div p{
-	display: none;
+	display:none ;
+	font: 15px/28px "";
+	border: 1px solid #888888;
+	float: left;
+	margin-left: 10px;
+	padding: 0 5px;
 }
 .register-b div .error{
 	font: 15px/28px "";

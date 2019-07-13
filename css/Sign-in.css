@@ -10,6 +10,7 @@
 }
 #top-l{
 	float: left;
+	
 }
 #top-l li{
 	float: left;
@@ -143,6 +144,7 @@
 	height: 10px;
 	border: 1px solid #999999;
 	margin-top: 1px;
+	font: 700 10px/1 "";
 }
 .from-t .span1{
 	display: block;

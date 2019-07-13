@@ -1,4 +1,23 @@
 (function(){
+var dl = localStorage.getItem("dl");
+var dl = JSON.parse(dl);
+if(dl==0||dl==null){	
+}else{
+	$(".ac").eq(1).html("")
+	$(".ac").eq(0).html("注销")
+	$(".ac").eq(0).addClass("ZX");
+	var goodss = localStorage.getItem("goods") ? JSON.parse(localStorage.getItem("goods")) : [];
+	var cnum = 0;
+	for(var i=0;i<goodss.length;i++){
+		cnum += (goodss[i].num)*1;
+	}
+	$(".Shopping-Cart").find("span").html(cnum);
+	$(".ZX").click(function(){
+		localStorage.setItem("dl",0);
+	})
+	
+}
+	
 	class GoodsList{
 		 constructor(options){
 		 	this.left = options.left;
@@ -84,7 +103,7 @@
 		 	for(var i = this.index * this.num;i<this.index * this.num + this.num;i++){
 		 	 	if(i<this.res.length){
 		 	 		str +=	`<li clss="box" index = "${this.res[i].goodsId}">
-							<a href="http://localhost:8181/Commodity-details.html?${this.res[i].goodsId}">
+							<a href="http://localhost:8181/Commodity-details.html?id=${this.res[i].goodsId}">
 								<img src="${this.res[i].src}" />
 							</a>
 							<div class="ac">
@@ -104,21 +123,30 @@
 		 	 	}
 		 	}
 		 	this.cont.innerHTML = str;
+		 	this.displayss();
 		 }
 		 addEvent(){
 		 	var that = this;
-            this.cont.onclick = function(eve){
-                var e = eve || window.event;
-                var t = e.target || e.srcElement;
-                if(t.className == "addCar"){
-                    that.id = t.parentNode.parentNode.getAttribute("index");
-                    that.setData();
-                }
+		 	this.cont.onclick = function(eve){
+	            if(dl==1){
+		 			var e = eve || window.event;
+	                var t = e.target || e.srcElement;
+	                if(t.className == "addCar"){
+	                    that.id = t.parentNode.parentNode.getAttribute("index");
+	                    that.setData();
+	                }
+		 			}else{
+		 				alert("请登录")
+		 				window.location.href="Sign-in.html";	
+		 			}  
             }
+		 	
+		 	
+            
 		 }
 		 setData(){
 		 	this.goods = localStorage.getItem("goods");
-		 	 if(this.goods){
+		 	if(this.goods){
                 this.goods = JSON.parse(this.goods)
                 var onoff = true;
                 for(var i=0;i<this.goods.length;i++){
@@ -133,13 +161,20 @@
                         num:1
                     })
                 }
-           }else{
+            }else{
                 this.goods = [{
                     id:this.id,
                     num:1
                 }];
             }         
             localStorage.setItem("goods",JSON.stringify(this.goods))
+
+		 }
+		 displayss(){
+//		 	$(".last").click(function(){
+//				console.log($(".last"),$(this),$(this).index())
+//				$(".Brand").eq($(this).index()).css("height","60px")
+//			})
 		 }
 	}
 	new GoodsList({

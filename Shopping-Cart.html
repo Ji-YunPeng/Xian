@@ -17,11 +17,11 @@
 				<ul id="top-r">
 					<li>您好,欢迎来到天虹!</li>
 					<li><span></span></li>
-					<li><a href="#" class="ac">[登录]</a></li>
+					<li><a href="http://localhost:8181/Sign-in.html" class="ac">[登录]</a></li>
 					<li><span></span></li>
-					<li><a href="#" class="ac">[注册]</a></li>
+					<li><a href="http://localhost:8181/Registration-page.html" class="ac">[注册]</a></li>
 					<li><span></span></li>
-					<li><a href="#" class="ac">我的订单</a></li>
+					<li><a href="http://localhost:8181/Shopping-Cart.html" class="ac">我的订单</a></li>
 					<li><span></span ></li>
 					<li><a href="#" class="ac">我的天虹</a></li>
 					<li><span></span></li>
@@ -43,7 +43,7 @@
 		
 	
 		<div id="car-top" class="margin">
-			<a href="#"><img src="imgs/logo_hlj.png"/></a>
+			<a href="http://localhost:8181/ch.html#"><img src="imgs/logo_hlj.png"/></a>
 			<a href="#"><img src="imgs/10.jpg"/></a>
 		</div>
 		
@@ -56,48 +56,35 @@
 				<div class="car-top2-b-c">
 					<img src="imgs/cart_emptyB.gif" />
 					<div class="car-top2-b-c-r">
-						  您的购物车还是空的，马上<a href="#">登录</a>可展示您之前加入购物车的商品去<a href="#">首页</a>挑选您喜欢的商品
+						 请您马上<a href="http://localhost:8181/Sign-in.html">登录</a>可展示您之前加入购物车的商品去<a href="http://localhost:8181/ch.html#">首页</a>挑选您喜欢的商品
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<div id="car-main" class="margin">
-			<div class="car-main-t">
-				<div class="num">
-					<div class="f1"><input type="checkbox" checked="checked" id="CBox"/>全选</div>
-				</div>
-				<div class="ProInfo">商品信息</div>
-				<div class="ProPrice">价格/积分</div>
-				<div class="quantity">数量</div>
-				<div class="subtotal">小计</div>
-				<div class="action">操作</div>
-			</div>
-			<div class="car-main-b" id="CarB">
-				<div class="car-item">
+		<div class="bor">
+			<div id="car-main" class="margin">
+				<div class="car-main-t">
 					<div class="num">
-						<div class="f1"><input checked="checked" value="509470586" class="ChD" type="checkbox"></div>
+						<div class="f1"><input type="checkbox" checked="checked" id="CBox"/>全选</div>
 					</div>
-					<div class="ProInfo">
-						<a href="#"><img src="https://img1.tianhong.cn/upload/pd/m/yyml_jksp_4431/201610/2103d56652804c40bcc3d31f14760a74_220x220.jpg"/></a>
-						<p>德亚全脂牛奶(200ml*12)</p>
-					</div>
-					<div class="ProPrice">
-						<span class="jiag">￥67.90</span>
-						<span></span>
-					</div>
-					<div class="quantity">
-						<input type="number" value="1" min=1 class="changeNum">
-					</div>
-					<div class="subtotal">￥67.90</div>
-					<div class="action">
-						<p class="sc">收藏</p>
-						<p class="del">删除</p>
+					<div class="ProInfo">商品信息</div>
+					<div class="ProPrice">价格/积分</div>
+					<div class="quantity">数量</div>
+					<div class="subtotal">小计</div>
+					<div class="action">操作</div>
+				</div>
+				<div class="car-main-b" id="CarB">
+					<div class="car-items">
+						您的购物车是空的,请前往<a href="http://localhost:8181/ch.html">首页</a>.
 					</div>
 				</div>
+				<!--<div class="car-main-bb">
+					<span>已选择</span><div class="SL">22</div><span>件商品</span>
+					<p>总价（不含运费）</p><div class="ZJ">121</div><input type="button" value="去结算" />
+				</div>-->
 			</div>
 		</div>
-		
 		<div id="foot">
 			<div class="foot-t margin clear">
 				<dl>
@@ -200,5 +187,6 @@
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript" src="js/jquery.js" ></script>
 	<script type="text/javascript" src="js/Shopping-Cart.js" ></script>
 </html>

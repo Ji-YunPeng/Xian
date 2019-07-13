@@ -17,11 +17,11 @@
 				<ul id="top-r">
 					<li>您好,欢迎来到天虹!</li>
 					<li><span></span></li>
-					<li><a href="#" class="ac">[登录]</a></li>
+					<li><a href="http://localhost:8181/Sign-in.html" class="ac">[登录]</a></li>
 					<li><span></span></li>
-					<li><a href="#" class="ac">[注册]</a></li>
+					<li><a href="http://localhost:8181/Registration-page.html" class="ac">[注册]</a></li>
 					<li><span></span></li>
-					<li><a href="#" class="ac">我的订单</a></li>
+					<li><a href="http://localhost:8181/Shopping-Cart.html" class="ac">我的订单</a></li>
 					<li><span></span ></li>
 					<li><a href="#" class="ac">我的天虹</a></li>
 					<li><span></span></li>
@@ -42,17 +42,73 @@
 		</div>
 		<div id="header" class="margin clear">
 			<div class="logo">
-				<a href="#">
+				<a href="http://localhost:8181/ch.html">
 					<img src="imgs/logo_hlj.png"/>
 				</a>
 			</div>
 		</div>
 		
 		
-		<div id="register" class="margin">
+		<!--<div id="register" class="margin">
 			<div class="register-t">
 				<div class="register-t-l">用户注册:</div>
 				<div class="register-t-r"><a href="#">返回登录>></a></div>
+			</div>
+			<form>
+				<div class="register-b">
+				<div class="Account-Number">
+					<span><s>*</s>账号:</span>
+					<input type="text" id="text1" value=""  required=true minlength="2" name="user"/>
+					<p>请输入邮箱/账号/手机号</p>
+					<div class="Dropdown"></div>
+					
+				</div>
+				<div class="Setting-Password">
+					<span><s>*</s>设置密码:</span>
+					<input type="password" id="pass" value="" required=true minlength="6" maxlength="20"/>
+					<p>6-20位字符可由数字字母符号组成</p>
+					<div class="Password-strength"></div>
+				</div>
+				<div class="Confirm-password">
+					<span><s>*</s>确认密码:</span>
+					<input type="password" id="pass1" value="" equalTo="#pass" required=true minlength="6" maxlength="20"/>
+					<p>确认密码</p>
+				</div>
+				<div class="Phone-number">
+					<span><s>*</s>电话号码:</span>
+					<input type="tel" id="tel" value="" digits=true minlength="11" maxlength="11"/>
+					<p>请输入验证手机号</p>
+				</div>
+				<div class="Verification-Code">
+					<span><s>*</s>验证码:</span>
+					<input type="text" id="text2" value="" required=true/>
+					<img src="http://www.morefood.com/admin/imgcode?0.9639870366837108"/>
+					<p>输入图片验证码</p>
+				</div>
+				<div class="Short-Message">
+					<span><s>*</s>短信验证:</span>
+					<input type="text" id="text3" value="" required=true/>
+					<a href="#" class="a1">获得短信验证码</a>
+					<p>输入短信验证码</p>
+				</div>
+				<div class="Consent-Agreement">
+					<input type="checkbox" checked="checked" id="cbox" required=true/>
+					阅读并接受
+					<a href="#">《用户协议》</a>
+				</div>
+				<div class="Determine">
+					<input type="button" id="btn" value="同意以上协议，注册"/>
+				</div>
+			</div>
+			</form>
+			
+		</div>-->
+		
+		
+				<div id="register" class="margin">
+			<div class="register-t">
+				<div class="register-t-l">用户注册:</div>
+				<div class="register-t-r"><a href="http://localhost:8181/Sign-in.html">返回登录>></a></div>
 			</div>
 			<form>
 				<div class="register-b">
